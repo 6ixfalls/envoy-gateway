@@ -2,6 +2,13 @@ module github.com/envoyproxy/gateway
 
 go 1.25.3
 
+replace (
+	github.com/envoyproxy/go-control-plane => github.com/6ixfalls/envoy-go-control-plane v0.0.0-20251111072851-720741c297a6
+	github.com/envoyproxy/go-control-plane/contrib => github.com/6ixfalls/envoy-go-control-plane/contrib v0.0.0-20251111072851-720741c297a6
+	github.com/envoyproxy/go-control-plane/envoy => github.com/6ixfalls/envoy-go-control-plane/envoy v0.0.0-20251111072851-720741c297a6
+	github.com/envoyproxy/go-control-plane/ratelimit => github.com/6ixfalls/envoy-go-control-plane/ratelimit v0.0.0-20251111072851-720741c297a6
+)
+
 require (
 	fortio.org/fortio v1.73.0
 	fortio.org/log v1.18.1
@@ -15,9 +22,9 @@ require (
 	github.com/docker/cli v28.5.1+incompatible
 	github.com/docker/docker v28.3.3+incompatible
 	github.com/dominikbraun/graph v0.23.0
-	github.com/envoyproxy/go-control-plane v0.13.5-0.20251029084203-42a4a9261f66
+	github.com/envoyproxy/go-control-plane v0.14.0
 	github.com/envoyproxy/go-control-plane/contrib v1.32.5-0.20251029084203-42a4a9261f66
-	github.com/envoyproxy/go-control-plane/envoy v1.35.1-0.20251029084203-42a4a9261f66
+	github.com/envoyproxy/go-control-plane/envoy v1.36.0
 	github.com/envoyproxy/go-control-plane/ratelimit v0.1.1-0.20251029084203-42a4a9261f66
 	github.com/envoyproxy/ratelimit v1.4.1-0.20230427142404-e2a87f41d3a7
 	github.com/evanphx/json-patch v5.9.11+incompatible
@@ -59,7 +66,7 @@ require (
 	go.opentelemetry.io/otel/metric v1.38.0
 	go.opentelemetry.io/otel/sdk v1.38.0
 	go.opentelemetry.io/otel/sdk/metric v1.38.0
-	go.opentelemetry.io/proto/otlp v1.8.0
+	go.opentelemetry.io/proto/otlp v1.9.0
 	go.uber.org/zap v1.27.0
 	golang.org/x/exp v0.0.0-20250718183923-645b1fa84792
 	golang.org/x/net v0.46.0
