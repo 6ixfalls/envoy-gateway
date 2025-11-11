@@ -6,8 +6,11 @@
     name: first-listener/*
     routes:
     - directResponse:
-        body:
-          inlineBytes: VW5rbm93biBjdXN0b20gZmlsdGVyIHR5cGU6IFVuc3VwcG9ydGVkVHlwZQ==
+        bodyFormat:
+          format:
+            textFormatSource:
+              specifier:
+                inlineBytes: VW5rbm93biBjdXN0b20gZmlsdGVyIHR5cGU6IFVuc3VwcG9ydGVkVHlwZQ==
         status: 500
       match:
         prefix: /
