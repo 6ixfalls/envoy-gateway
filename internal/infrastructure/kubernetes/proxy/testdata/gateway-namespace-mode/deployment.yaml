@@ -65,7 +65,7 @@ spec:
             local_cluster_name: namespace-1/gateway-1
           node:
             locality:
-              zone: $(ENVOY_SERVICE_ZONE)
+              zone: "$(ENVOY_SERVICE_ZONE)"
           layered_runtime:
             layers:
             - name: global_config
@@ -485,7 +485,7 @@ spec:
             local_cluster_name: namespace-2/gateway-2
           node:
             locality:
-              zone: $(ENVOY_SERVICE_ZONE)
+              zone: "$(ENVOY_SERVICE_ZONE)"
           layered_runtime:
             layers:
             - name: global_config

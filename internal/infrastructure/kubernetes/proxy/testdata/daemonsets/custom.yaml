@@ -59,7 +59,7 @@ spec:
             local_cluster_name: default
           node:
             locality:
-              zone: $(ENVOY_SERVICE_ZONE)
+              zone: "$(ENVOY_SERVICE_ZONE)"
           layered_runtime:
             layers:
             - name: global_config

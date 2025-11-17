@@ -14,7 +14,7 @@ cluster_manager:
 {{- end }}
 node:
   locality:
-    zone: $(ENVOY_SERVICE_ZONE)
+    zone: "$(ENVOY_SERVICE_ZONE)"
 {{- if .StatsMatcher  }}
 stats_config:
   stats_matcher:
